@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Survey — A Sistah Beside You</title>
+<meta name="description" content="A few short questions about your experience. Your answers help us build better programs.">
+<meta property="og:title" content="Survey — A Sistah Beside You">
+<meta property="og:description" content="A few short questions about your experience. Your answers help us build better programs.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://asistahbesideyou.org/assets/hero.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Source+Sans+3:wght@400;600;700&display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="index.html">
+      <span class="brand-name">A Sistah Beside You</span>
+      <span class="brand-sub">Women's Cancer Alliance</span>
+    </a>
+    <input type="checkbox" id="navtoggle" class="navtoggle">
+    <label for="navtoggle" class="navburger" aria-label="Menu">
+      <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"></path></svg>
+    </label>
+    <nav class="nav">
+        <a href="index.html" class="navlink">Home</a>
+        <a href="about.html" class="navlink">About us</a>
+        <a href="what-we-do.html" class="navlink">What we do</a>
+        <a href="survey.html" class="navlink is-active">Survey</a>
+        <a href="get-involved.html" class="navlink">Get involved</a>
+        <a href="contact.html" class="navlink">Contact</a>
+    </nav>
+  </div>
+</header>
+<main id="main">
+
+  <section class="form-wrap section" id="formSection">
+    <div class="eyebrow">Focus group survey</div>
+    <h1>Help us shape the support you deserve.</h1>
+    <p class="lede">A few short questions about your experience. Your answers help us build better programs for our community.</p>
+    <form id="surveyForm" class="survey">
+      <fieldset>
+        <legend>Did you feel supported during your cancer care?</legend>
+        <div class="opts">
+          <label class="opt"><input type="radio" name="supported" value="Yes">Yes</label>
+          <label class="opt"><input type="radio" name="supported" value="No">No</label>
+          <label class="opt"><input type="radio" name="supported" value="Unsure">Unsure</label>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>If you had outside support to join you at your appointments, would you take it?</legend>
+        <div class="opts">
+          <label class="opt"><input type="radio" name="outside_support" value="Yes">Yes</label>
+          <label class="opt"><input type="radio" name="outside_support" value="No">No</label>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Would you be interested in being part of a 60-minute focus group?</legend>
+        <div class="opts">
+          <label class="opt"><input type="radio" name="focus_group" value="Yes">Yes</label>
+          <label class="opt"><input type="radio" name="focus_group" value="No">No</label>
+        </div>
+      </fieldset>
+      <div class="field">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Your name" autocomplete="name">
+      </div>
+      <fieldset>
+        <legend>Communication preference</legend>
+        <div class="opts">
+          <label class="opt"><input type="radio" name="comm_pref" value="Phone call">Phone call</label>
+          <label class="opt"><input type="radio" name="comm_pref" value="Text">Text</label>
+          <label class="opt"><input type="radio" name="comm_pref" value="Email">Email</label>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Age range</legend>
+        <div class="opts">
+          <label class="opt"><input type="radio" name="age_range" value="18-25">18-25</label>
+          <label class="opt"><input type="radio" name="age_range" value="26-39">26-39</label>
+          <label class="opt"><input type="radio" name="age_range" value="40-55">40-55</label>
+          <label class="opt"><input type="radio" name="age_range" value="56+">56+</label>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Are you a caregiver, family member, or person affected by cancer?</legend>
+        <div class="opts">
+          <label class="opt"><input type="radio" name="role" value="Person affected by cancer">Person affected by cancer</label>
+          <label class="opt"><input type="radio" name="role" value="Caregiver">Caregiver</label>
+          <label class="opt"><input type="radio" name="role" value="Family member">Family member</label>
+        </div>
+      </fieldset>
+      <div class="field">
+        <label for="availability">Your availability</label>
+        <textarea id="availability" name="availability" rows="3" placeholder="e.g. weekday evenings, Saturday mornings"></textarea>
+      </div>
+      <div class="field">
+        <label for="contact">Email address or phone number</label>
+        <input type="text" id="contact" name="contact" placeholder="How can we reach you?" required>
+      </div>
+      <div><button type="submit" class="btn btn-primary">Submit survey</button></div>
+      <p class="formnote" id="formNote" hidden></p>
+    </form>
+  </section>
+
+  <section class="form-wrap section center" id="thanks" hidden>
+    <div class="tick">&#10003;</div>
+    <h1>Thank you, sistah.</h1>
+    <p class="lede">Your voice matters. We will reach out using your preferred way to connect.</p>
+    <a class="btn btn-ghost" href="index.html">Back to home</a>
+  </section>
+
+  <section class="wrap section" id="msFormSection" hidden>
+    <div class="eyebrow">Focus group survey</div>
+    <h1>Help us shape the support you deserve.</h1>
+    <p class="lede">A few short questions about your experience. Your answers help us build better programs for our community.</p>
+    <div class="embed"><iframe id="msFormFrame" title="Focus group survey" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe></div>
+  </section>
+
+<script>
+/* ==================================================================
+   WHERE SURVEY ANSWERS GO.   Answers are sent to marcelle.jackman@gmail.com.
+
+   ---- OPTION 1 (live now, nothing to set up) ----------------------
+   Leave MS_FORM_URL empty and the built-in form below is used.
+   Submitting opens the visitor's own email app with their answers
+   filled in, addressed to marcelle.jackman@gmail.com. No account needed,
+   but it does rely on the visitor having email set up on their
+   device, and they can see (and edit) the message before sending.
+
+   ---- OPTION 2 (recommended: Microsoft Forms) ---------------------
+   1. Sign in at forms.office.com using the Microsoft account for
+      marcelle.jackman@gmail.com. (A Microsoft account can be created
+      with a Gmail address at signup.microsoft.com - the form must be
+      owned by that account for the emails to arrive there.)
+   2. Build the survey with the same questions as below.
+   3. Open ... > Settings and tick "Get email notification of each
+      response".
+   4. Click Collect responses > the < > Embed tab, and copy the web
+      address inside the src="..." part of the embed code.
+   5. Paste that address between the quotes on the MS_FORM_URL line.
+
+   The page then shows the Microsoft form instead, and Microsoft
+   stores every response and emails marcelle.jackman@gmail.com.
+================================================================== */
+var MS_FORM_URL   = "";
+var FORM_ENDPOINT = "";
+var NOTIFY_EMAIL  = "marcelle.jackman@gmail.com";
+
+(function () {
+  var form = document.getElementById('surveyForm');
+  var note = document.getElementById('formNote');
+
+  if (MS_FORM_URL) {
+    document.getElementById('formSection').hidden = true;
+    document.getElementById('msFormFrame').src = MS_FORM_URL;
+    document.getElementById('msFormSection').hidden = false;
+    return;
+  }
+
+  function answers() {
+    var d = new FormData(form), out = [];
+    d.forEach(function (v, k) { if (String(v).trim()) out.push([k, v]); });
+    return out;
+  }
+  function done() {
+    document.getElementById('formSection').hidden = true;
+    document.getElementById('thanks').hidden = false;
+    window.scrollTo(0, 0);
+  }
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    var rows = answers();
+    if (FORM_ENDPOINT) {
+      var body = new FormData();
+      rows.forEach(function (r) { body.append(r[0], r[1]); });
+      fetch(FORM_ENDPOINT, { method: 'POST', body: body, headers: { Accept: 'application/json' } })
+        .then(function (r) {
+          if (r.ok) { done(); }
+          else { note.hidden = false; note.textContent = 'Something went wrong sending that. Please email ' + NOTIFY_EMAIL + ' instead.'; }
+        })
+        .catch(function () {
+          note.hidden = false;
+          note.textContent = 'Something went wrong sending that. Please email ' + NOTIFY_EMAIL + ' instead.';
+        });
+    } else {
+      var lines = rows.map(function (r) {
+        return r[0].replace(/_/g, ' ').replace(/^./, function (c) { return c.toUpperCase(); }) + ': ' + r[1];
+      }).join('\n');
+      window.location.href = 'mailto:' + NOTIFY_EMAIL +
+        '?subject=' + encodeURIComponent('Focus group survey') +
+        '&body=' + encodeURIComponent(lines);
+      setTimeout(done, 600);
+    }
+  });
+})();
+</script>
+</main>
+<div class="silhouettes"><img src="assets/silhouettes.jpeg" alt="Silhouettes of Black and Brown women in many shades" loading="lazy"></div>
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <div>
+      <div class="footer-name">A Sistah Beside You Inc.</div>
+      <div class="footer-sub">Women's Cancer Alliance &middot; A Massachusetts nonprofit</div>
+    </div>
+    <div class="footer-contact"><a href="mailto:info@asistahbesideyou.org">info@asistahbesideyou.org</a> &middot; @asistabesideyou</div>
+  </div>
+</footer>
+</body>
+</html>
